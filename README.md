@@ -15,7 +15,9 @@ For a complete list of configuration options, see the [relevant documentation]("
 
 Using the `--hot-reload` flag, the Apollo Router can be made to watch for changes to its 
 configuration and schema files. When changes occur, the Apollo Router will reload the files 
-and incorporate any changes therein without any downtime. Here, taking advantage of the above
+and incorporate any changes therein without any downtime. 
+
+Here, taking advantage of the above
 and utilizing the popular, kubernetes `sidecar pattern`, we will create a multi-container 
 Apollo Router deployment for kubernetes that automatically tracks and syncs changes 
 to configuration files that we will store in a `git` repository hosted on `GitHub`. 
